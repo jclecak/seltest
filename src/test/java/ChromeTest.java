@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,8 +21,10 @@ public class ChromeTest {
         // not the implementation.
 
         System.setProperty("webdriver.chrome.driver", "/home/jclecak/bin/chromedriver");
-        System.setProperty("webdriver.chrome.logfile", "/home/jclecak/chromedriver.log");
-        WebDriver driver = new ChromeDriver();
+        //System.setProperty("webdriver.chrome.logfile", "/home/jclecak/chromedriver.log");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox");
+        WebDriver driver = new ChromeDriver(options);
 
         // And now use this to visit Google
         driver.get("http://www.google.com");
