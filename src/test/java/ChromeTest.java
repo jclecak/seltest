@@ -12,7 +12,7 @@ import static java.lang.Thread.sleep;
  * Created by jclecak on 3/31/17.
  */
 
-public class ThisIsAnotherTest {
+public class ChromeTest {
     @Test
     public void LookupCheese() {
         // Create a new instance of the Firefox driver
@@ -20,8 +20,9 @@ public class ThisIsAnotherTest {
         // not the implementation.
 
         // WebDriver driver = new FirefoxDriver();
-        System.setProperty("webdriver.chrome.driver", "/home/jclecak/bin/chromedriver");
+        // System.setProperty("webdriver.chrome.driver", "/home/jclecak/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
+
 
         // And now use this to visit Google
         driver.get("http://www.google.com");
