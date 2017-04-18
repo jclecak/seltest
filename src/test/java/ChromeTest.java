@@ -20,6 +20,7 @@ public class ChromeTest {
         // not the implementation.
 
         System.setProperty("webdriver.chrome.driver", "/home/jclecak/bin/chromedriver");
+        System.setProperty("webdriver.chrome.logfile", "/home/jclecak");
         WebDriver driver = new ChromeDriver();
 
         // And now use this to visit Google
