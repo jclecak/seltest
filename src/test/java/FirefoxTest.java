@@ -19,7 +19,7 @@ public class FirefoxTest {
         // Notice that the remainder of the code relies on the interface,
         // not the implementation.
 
-        System.setProperty("webdriver.firefox.driver", "/home/jclecak/bin/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/home/jclecak/bin/geckodriver");
         WebDriver driver = new FirefoxDriver();
 
         // And now use this to visit Google
