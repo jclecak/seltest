@@ -20,6 +20,7 @@ public class ThisIsAnotherTest {
         // not the implementation.
 
         // WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/home/jclecak/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
 
         // And now use this to visit Google
