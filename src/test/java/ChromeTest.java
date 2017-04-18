@@ -33,7 +33,7 @@ public class ChromeTest {
         WebElement element = driver.findElement(By.name("q"));
 
         // Enter something to search for
-        element.sendKeys("Test!");
+        element.sendKeys("Cheese!");
 
         // Now submit the form. WebDriver will find the form for us from the element
         element.submit();
@@ -45,7 +45,7 @@ public class ChromeTest {
         // Wait for the page to load, timeout after 10 seconds
         (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
-                return d.getTitle().toLowerCase().startsWith("test!");
+                return d.getTitle().toLowerCase().startsWith("cheese!");
             }
         });
 
