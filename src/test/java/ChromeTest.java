@@ -23,7 +23,8 @@ public class ChromeTest {
         System.setProperty("webdriver.chrome.driver", "/home/jclecak/bin/chromedriver");
         //System.setProperty("webdriver.chrome.logfile", "/home/jclecak/chromedriver.log");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
+        //enable --no-sandbox option if running mvn as root for troubleshooting Jenkins
+        //options.addArguments("--no-sandbox");
         WebDriver driver = new ChromeDriver(options);
 
         // And now use this to visit Google
