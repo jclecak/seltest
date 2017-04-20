@@ -30,7 +30,7 @@ public class ExcelTestData {
 
     @Parameters
     public static Collection testData() throws Exception {
-        InputStream spreadsheet = new FileInputStream("/home/jclecak/selbook/B03975_07_Code/Test Data Files/Data.xlsx");
+        InputStream spreadsheet = new FileInputStream("./src/test/resources/testdata/Data.xlsx");
         return new SpreadsheetData(spreadsheet).getData();
     }
 
