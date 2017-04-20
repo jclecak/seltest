@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,7 @@ import static java.lang.Thread.sleep;
 
 public class FirefoxTest {
     @Test
+    @Ignore
     public void LookupCheese() {
         // Create a new instance of the Firefox driver
         // Notice that the remainder of the code relies on the interface,
