@@ -49,6 +49,9 @@ public class ExcelTestData {
         // Create a new instance of the Chrome driver
         driver = new ChromeDriver();
         driver.get("http://cookbook.seleniumacademy.com/bmicalculator.html");
+
+        // could not get this to work using relative path
+        //  driver.get("file://./src/main/resources/bmicalc.html");
     }
 
     @Test

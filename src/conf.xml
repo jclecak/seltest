@@ -1,0 +1,49 @@
+<suite name="Parallel Tests" verbose="1" thread-count="3"
+	parallel="tests">
+	<tests>
+		<test name="Linux+Chrome">
+			<parameters>
+				<parameter name="platform" value="Linux" />
+				<parameter name="browser" value="Chrome" />
+				<parameter name="version" value="35" />
+				<parameter name="url" value="file:///home/jclecak/selbook/bmicalc.html" />
+			</parameters>
+			<classes>
+				<class name="SeGridTest" />
+			</classes>
+		</test>
+		<test name="Windows+IE10 Test">
+			<parameters>
+				<parameter name="platform" value="Windows" />
+				<parameter name="browser" value="Internet Explorer" />
+				<parameter name="version" value="10" />
+				<parameter name="url" value="file:///home/jclecak/selbook/bmicalc.html" />
+			</parameters>
+			<classes>
+				<class name="SeGridTest" />
+			</classes>
+		</test>
+		<test name="Mac+Firefox Test">
+			<parameters>
+				<parameter name="platform" value="Mac" />
+				<parameter name="browser" value="Firefox" />
+				<parameter name="version" value="38.0.5" />
+				<parameter name="url" value="file:///home/jclecak/selbook/bmicalc.html" />
+			</parameters>
+			<classes>
+				<class name="SeGridTest" />
+			</classes>
+		</test>
+		<test name="Mac+Safari Test">
+			<parameters>
+				<parameter name="platform" value="Mac" />
+				<parameter name="browser" value="Safari" />
+				<parameter name="version" value="10.1" />
+				<parameter name="url" value="file:///home/jclecak/selbook/bmicalc.html" />
+			</parameters>
+			<classes>
+				<class name="SeGridTest" />
+			</classes>
+		</test>
+	</tests>
+</suite>
